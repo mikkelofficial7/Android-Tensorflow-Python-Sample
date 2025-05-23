@@ -17,6 +17,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
+        // ensure only supported Application Binary Interfaces (ABIs) are selected
         ndk {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a")
         }
